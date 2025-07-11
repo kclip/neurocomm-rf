@@ -1,0 +1,69 @@
+architecture:
+  hidden_features: 128
+  input_dims: 700
+  outputs: 20
+cutoff:
+  name: timestep
+dataset:
+  dir: ./datasets/shd
+  name: shd
+evaluation:
+  model_path: shd.pth
+inherit_from:
+- configs/base/base_config.yaml
+- configs/neuron/lif.yaml
+- configs/loss/tet.yaml
+- configs/cutoff/timestep.yaml
+loss:
+  lamb: 0.001
+  means: 1.0
+  name: mean
+neuron:
+  T: 250
+  mem_init: 0.0
+  multistep: true
+  name: brf
+  recurrent: true
+  reset_mode: hard
+  tau: 0.5
+  vthr: 1.0
+regularizer:
+  alpha: 0.0001
+  name: hoyer
+  rcs_n: 0.3
+results:
+  checkpoint_path: none
+  checkpoint_save: false
+  save_dir: none
+  save_dir_base: outputs
+  save_results: true
+  tensorboard_logging: false
+  wandb_logging: false
+snn_settings:
+  TEBN: false
+  add_time_dim: false
+  alpha: 0.0
+  from_relu: true
+  method: snn
+  multistep: true
+training:
+  batch_size: 32
+  epochs: 20
+  gpu_id: '1'
+  lr: 0.075
+  model: fcshd
+  print_freq: 1000
+  seed: 500
+  start_epoch: 0
+  weight_decay: 0.005
+  workers: 8
+wireless_ch:
+  rx_snr_db: 0
+  adaptive_power: False
+  distance: 30
+  E: -60
+  b: 0.5
+  modulation: noiseless
+  num_bit: 0
+  num_ofdma: 1
+  power_constrs: block

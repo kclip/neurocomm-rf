@@ -1,0 +1,9 @@
+neuron:
+  name: 'MLIF'
+  T: 2
+  vthr: 1.0 
+  num_bit: 2
+  tau: 0.5
+  mem_init: 0.0
+  multistep: True 
+  reset_mode: 'hard' 

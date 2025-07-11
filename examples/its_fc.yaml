@@ -1,0 +1,39 @@
+inherit_from: 
+  - "configs/base/base_config.yaml"
+  - "configs/neuron/lif.yaml"
+  - "configs/loss/tet.yaml"
+  - "configs/cutoff/timestep.yaml"
+
+dataset:
+  name: 'its_10msps'
+  dir: './datasets/ITS'
+
+training:
+  batch_size: 128
+  epochs: 100
+  model: 'fcsnn_its' #model: 'fcits'
+  gpu_id: '0'
+  weight_decay: 5.0e-3
+  lr: 0.075
+
+snn_settings:
+  method: 'snn'
+  add_time_dim: False
+  alpha: 0.0
+
+loss:
+  name: 'mean'
+  means: 1.0
+  lamb: 0.001
+
+neuron:
+  name: 'brf'
+  T: 110
+  recurrent: False
+
+architecture:
+  input_dims: 10
+  hidden_features: 128
+
+evaluation:
+  model_path: 'its_10msps.pth'

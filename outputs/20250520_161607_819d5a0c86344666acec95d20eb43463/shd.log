@@ -1,0 +1,16 @@
+[2025-05-20 16:16:12,323][training.py][line:134][INFO] start training!
+[2025-05-20 16:16:40,161][distributed.py][line:1140][INFO] Reducer buckets have been rebuilt in this iteration.
+[2025-05-20 16:22:45,984][training.py][line:173][INFO] Epoch:[1/20]	 Best Acc=64.753	Loss: 1.425, Acc@1: 64.753, Acc@5: 98.675, cs_loss: 0.002, lr: 0.074
+[2025-05-20 16:29:15,254][training.py][line:173][INFO] Epoch:[2/20]	 Best Acc=87.809	Loss: 0.910, Acc@1: 87.809, Acc@5: 99.514, cs_loss: 0.003, lr: 0.072
+[2025-05-20 16:35:45,347][training.py][line:173][INFO] Epoch:[3/20]	 Best Acc=89.620	Loss: 0.923, Acc@1: 89.620, Acc@5: 99.249, cs_loss: 0.003, lr: 0.069
+[2025-05-20 16:42:12,805][training.py][line:173][INFO] Epoch:[4/20]	 Best Acc=89.620	Loss: 0.995, Acc@1: 87.456, Acc@5: 98.852, cs_loss: 0.003, lr: 0.065
+[2025-05-20 16:48:22,947][training.py][line:173][INFO] Epoch:[5/20]	 Best Acc=89.620	Loss: 0.992, Acc@1: 87.014, Acc@5: 99.117, cs_loss: 0.003, lr: 0.060
+[2025-05-20 16:54:30,038][training.py][line:173][INFO] Epoch:[6/20]	 Best Acc=90.901	Loss: 0.884, Acc@1: 90.901, Acc@5: 99.470, cs_loss: 0.003, lr: 0.055
+[2025-05-20 17:00:36,914][training.py][line:173][INFO] Epoch:[7/20]	 Best Acc=90.901	Loss: 0.955, Acc@1: 89.929, Acc@5: 98.984, cs_loss: 0.003, lr: 0.050
+[2025-05-20 17:06:43,197][training.py][line:173][INFO] Epoch:[8/20]	 Best Acc=91.299	Loss: 0.924, Acc@1: 91.299, Acc@5: 98.675, cs_loss: 0.003, lr: 0.044
+[2025-05-20 17:12:48,554][training.py][line:173][INFO] Epoch:[9/20]	 Best Acc=91.299	Loss: 0.952, Acc@1: 90.194, Acc@5: 98.984, cs_loss: 0.003, lr: 0.038
+[2025-05-20 17:18:57,170][training.py][line:173][INFO] Epoch:[10/20]	 Best Acc=91.299	Loss: 0.978, Acc@1: 90.371, Acc@5: 99.072, cs_loss: 0.003, lr: 0.032
+[2025-05-20 17:25:02,566][training.py][line:173][INFO] Epoch:[11/20]	 Best Acc=91.299	Loss: 0.951, Acc@1: 90.680, Acc@5: 99.382, cs_loss: 0.003, lr: 0.027
+[2025-05-20 17:31:29,994][training.py][line:173][INFO] Epoch:[12/20]	 Best Acc=91.299	Loss: 1.026, Acc@1: 90.813, Acc@5: 98.763, cs_loss: 0.003, lr: 0.021
+[2025-05-20 17:37:25,612][training.py][line:173][INFO] Epoch:[13/20]	 Best Acc=91.299	Loss: 1.041, Acc@1: 90.769, Acc@5: 99.072, cs_loss: 0.003, lr: 0.016
+[2025-05-20 17:43:26,425][training.py][line:173][INFO] Epoch:[14/20]	 Best Acc=91.299	Loss: 1.053, Acc@1: 90.283, Acc@5: 99.028, cs_loss: 0.003, lr: 0.012

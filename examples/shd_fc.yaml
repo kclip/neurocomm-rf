@@ -1,0 +1,48 @@
+inherit_from: 
+  - "configs/base/base_config.yaml"
+  - "configs/neuron/lif.yaml"
+  - "configs/loss/tet.yaml"
+  - "configs/cutoff/timestep.yaml"
+
+dataset:
+  name: 'shd'
+  dir: './datasets/shd'
+
+training:
+  batch_size: 32
+  epochs: 20
+  model: 'fcshd'
+  gpu_id: '1'
+  lr: 0.075
+
+snn_settings:
+  method: 'snn'
+  add_time_dim: False
+  
+loss:
+  name: 'mean'
+
+neuron:
+  name: 'brf'  #brf, rf, alif, lif are available
+  T: 250
+  recurrent: True
+
+wireless_ch:
+  rx_snr_db: 0
+  adaptive_power: False
+  distance: 30
+  E: -60
+  b: 0.5
+  modulation: noiseless
+  num_bit: 0
+  num_ofdma: 1
+  power_constrs: block
+
+
+architecture:
+  hidden_features: 128
+  input_dims: 700
+  outputs: 20
+
+evaluation:
+  model_path: 'shd.pth'

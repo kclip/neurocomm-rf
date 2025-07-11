@@ -1,0 +1,35 @@
+results:
+  save_results: True
+  save_dir_base: "outputs"
+  save_dir: "none"
+  wandb_logging: False
+  tensorboard_logging: False
+  checkpoint_save: False
+  checkpoint_path: 'none'
+  
+dataset:
+  name: 'cifar10'
+  dir: './datasets'
+
+training:
+  model: 'resnet18'
+  batch_size: 128
+  seed: 1200
+  start_epoch: 0
+  epochs: 300
+  weight_decay: 5.0e-3
+  lr: 0.1
+  workers: 8
+  print_freq: 1000
+  gpu_id: 'none'
+
+regularizer:
+  name: 'none'
+  
+snn_settings:
+  method: 'snn' #snn: snn training  ann: ann training before ANN-to-SNN conversion
+  from_relu: True
+  add_time_dim: True
+  TEBN: False
+  multistep: True
+  alpha: 0.00

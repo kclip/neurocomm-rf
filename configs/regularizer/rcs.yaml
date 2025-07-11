@@ -1,0 +1,3 @@
+regularizer:
+  name: 'rcs'
+  rcs_n: 0.3

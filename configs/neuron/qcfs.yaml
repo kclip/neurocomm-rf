@@ -1,0 +1,8 @@
+neuron:
+  name: 'QCFS'
+  L: 2
+  T: 1
+  vthr: 8.0 
+  multistep: True 
+  mem_init: 0.5
+  reset_mode: 'soft' 

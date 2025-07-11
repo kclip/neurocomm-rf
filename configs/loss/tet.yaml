@@ -1,0 +1,4 @@
+loss:
+  name: 'tet'
+  means: 1.0
+  lamb: 1.0e-3
